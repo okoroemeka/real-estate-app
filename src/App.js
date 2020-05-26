@@ -1,8 +1,13 @@
 import React from 'react';
+import HeroArea from './components/HeroArea';
 import './style/App.css';
 
 function App() {
-  return <div className='App'></div>;
+  return (
+    <div className='container'>
+      <HeroArea />
+    </div>
+  );
 }
 
 export default App;
