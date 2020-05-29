@@ -1,0 +1,69 @@
+.search__container {
+  width: 100;
+  display: flex;
+  margin-top: 0.5rem;
+  .select__area {
+    width: 20%;
+    padding-right: 0.3rem;
+    .select {
+      padding: 80rem;
+      height: 3rem;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  .search__area {
+    display: flex;
+    width: 70%;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    .search__input__area {
+      width: 70%;
+      display: flex;
+      .apartment__icon {
+        width: 10%;
+        display: flex;
+        align-items: center;
+        img {
+          width: 1.5rem;
+        }
+      }
+      .input__area {
+        width: 90%;
+        .input {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+    .search__button__area {
+      width: 30%;
+      .search__button {
+        width: auto;
+        color: #ffffff;
+        display: flex;
+        padding: 0.4rem 1rem;
+        margin: 0 auto;
+        align-items: center;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        background: #0d13d7;
+        border-radius: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+        .search__icon__image {
+          width: 1.3rem;
+          padding-right: 0.3rem;
+        }
+        .button__text {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
