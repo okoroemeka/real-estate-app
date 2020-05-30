@@ -24,11 +24,13 @@ const ContentCard = ({
 };
 ContentCard.Wrapper = styled.div`
   width: ${(props) => props.width || '50%'};
-  height: ${(props) => convertFromPixelsToRem(props.height) || 'auto'};
+  height: ${(props) =>
+    props.height ? convertFromPixelsToRem(props.height) : 'auto'};
   position: relative;
   background: ${(props) => props.backgroundColor || 'white'};
   border: none;
-  border-radius: ${(props) => convertFromPixelsToRem(props.borderRadius) || 0};
+  border-radius: ${(props) =>
+    props.borderRadius ? convertFromPixelsToRem(props.borderRadius) : 0};
   padding: ${(props) =>
     props.padding ? convertFromPixelsToRem(props.padding) : 0};
 `;
