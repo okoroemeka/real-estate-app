@@ -2,10 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import ContentCard from '../UI/ContentCard';
 import { convertFromPixelsToRem } from '../../utils/helper';
-import locationIcon from '../../assets/images/locationIcon.svg';
-import bedroomIcon from '../../assets/images/bedroomIcon.svg';
-import bathroomIcon from '../../assets/images/bathroomIcon.svg';
-import sizeIcon from '../../assets/images/sizeIcon.svg';
+import PropertyDescription from '../UI/PropertyDescription';
 
 const PropertyCard = ({
   propertyImageLink,
@@ -23,47 +20,15 @@ const PropertyCard = ({
         <PropertyCard.Wrapper height={250}>
           <PropertyCard.Image src={propertyImageLink} alt={houseName} />
         </PropertyCard.Wrapper>
-        <PropertyCard.Wrapper cardPadding={10}>
-          <PropertyCard.Div>
-            <PropertyCard.Text fontSize={18} fontWeight={550}>
-              {houseName}
-            </PropertyCard.Text>
-          </PropertyCard.Div>
-          <PropertyCard.Div>
-            <PropertyCard.IconImage src={locationIcon} alt='location icon' />
-            <PropertyCard.Text fontSize={12} color='#808080'>
-              {address}
-            </PropertyCard.Text>
-          </PropertyCard.Div>
-          <PropertyCard.Div>
-            <PropertyCard.Text fontSize={12}>{action}</PropertyCard.Text>
-          </PropertyCard.Div>
-          <PropertyCard.Div>
-            <PropertyCard.Text fontSize={12} color='#ff0000'>{`$${price.toFixed(
-              2
-            )}`}</PropertyCard.Text>
-          </PropertyCard.Div>
-          <PropertyCard.Div>
-            <PropertyCard.Div>
-              <PropertyCard.IconImage src={bedroomIcon} alt='bed room Icon' />
-              <PropertyCard.Text
-                fontSize={12}
-              >{`${numberOfBedRoom} Red Room`}</PropertyCard.Text>
-            </PropertyCard.Div>
-            <PropertyCard.Div>
-              <PropertyCard.IconImage src={bathroomIcon} alt='bath room icon' />
-              <PropertyCard.Text
-                fontSize={12}
-              >{`${numberOfBathRoom} Bath Room`}</PropertyCard.Text>
-            </PropertyCard.Div>
-            <PropertyCard.Div>
-              <PropertyCard.IconImage src={sizeIcon} alt='house size icon' />
-              <PropertyCard.Text
-                fontSize={12}
-              >{`${houseSize} sft`}</PropertyCard.Text>
-            </PropertyCard.Div>
-          </PropertyCard.Div>
-        </PropertyCard.Wrapper>
+        <PropertyDescription
+          houseName={houseName}
+          address={address}
+          action={action}
+          price={price}
+          numberOfBedRoom={numberOfBedRoom}
+          numberOfBathRoom={numberOfBathRoom}
+          houseSize={houseSize}
+        />
       </PropertyCard.Container>
     </ContentCard>
   );

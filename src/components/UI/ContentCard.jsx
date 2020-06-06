@@ -24,8 +24,7 @@ const ContentCard = ({
 };
 ContentCard.Wrapper = styled.div`
   width: ${(props) => props.width || '50%'};
-  height: ${(props) =>
-    props.height ? convertFromPixelsToRem(props.height) : 'auto'};
+  height: ${(props) => props.height || 'auto'};
   position: relative;
   background: ${(props) => props.backgroundColor || 'white'};
   border: none;
