@@ -1,0 +1,34 @@
+.offer__apartment {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: transparent;
+  .upper-region {
+    display: flex;
+    height: 50%;
+    padding-left: 2rem;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    .fa {
+      font-size: 5rem;
+      position: relative;
+    }
+    .discount__rate {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .label {
+      text-transform: capitalize;
+      font-size: 1.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+}
