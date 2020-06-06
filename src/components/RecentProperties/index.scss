@@ -1,0 +1,9 @@
+.recent__properties__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3% 9.5%;
+  .property__card__container {
+    justify-content: space-between;
+  }
+}
